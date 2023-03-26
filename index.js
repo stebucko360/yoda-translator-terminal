@@ -8,7 +8,7 @@ const yodaTranslator = async () => {
   console.log(translation);
   const reDo = await inquirer.prompt(question2);
 
-  if (reDo.askAgain === true) {
+  if (reDo.askAgain) {
     yodaTranslator();
   } else return;
 };
